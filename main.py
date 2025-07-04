@@ -6,9 +6,9 @@ from tqdm import tqdm
 import os
 
 
-TELEGRAMAPI_ID = ""
-TELEGRAMAPI_HASH = ""
-TELEGRAM_TOKEN = ""
+TELEGRAMAPI_ID = os.getenv("APITELEGRAM_ID")
+TELEGRAMAPI_HASH = os.getenv("APITELEGRAM_HASH")
+TELEGRAM_TOKEN = os.getenv("BOT_TOKEN")
 with TelegramClient('name', TELEGRAMAPI_ID, TELEGRAMAPI_HASH) as client:
     # Connect to Telegram (if not already connected)
     # client.connect() test75.py allcodes for sending* HAZIR <=
